@@ -43,8 +43,8 @@ export default function HeroSection() {
           <IconButton href="https://instagram.com" target="_blank" color="inherit"><Instagram /></IconButton>
         </Stack>
 				<Box>
-        <div class="mouse-icon">
-            <div class="scroll"/>
+        <div className="mouse-icon">
+            <div className="scroll"/>
         </div>
       </Box>
       </Box>

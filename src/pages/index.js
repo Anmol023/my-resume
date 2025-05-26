@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import ScrollSpyNavbar from '../components/ScrollSpyNavbar';
 import HeroSection from '../components/HeroSection';
 import About from '../components/About';
@@ -8,8 +8,11 @@ import Experience from '../components/Experience';
 import { SECTIONS } from '@/constant';
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("")
+  const [activeTab, setActiveTab] = useState(-1)
   const [isScrolled, setIsScrolled] = useState(false)
+
+  const activeTabRef = useRef(activeTab);
+  activeTabRef.current = activeTab
 
   useEffect(() => {
     let ticking = false
@@ -18,15 +21,17 @@ export default function Home() {
       if (!ticking) {
         window.requestAnimationFrame(() => {
           const scrollY = window.scrollY || window.pageYOffset
-          setIsScrolled(scrollY > window.innerHeight * 0.5)
+          setIsScrolled(scrollY > window.innerHeight * 0.1)
 
           if(scrollY< 100){
-            setActiveTab("")
+            if (activeTabRef.current !== -1) setActiveTab(-1);
           } else{
               for (let i = SECTIONS.length - 1; i >= 0; i--) {
               const el = document.getElementById(SECTIONS[i])
               if (el && el.offsetTop <= scrollY + 100) {
-                setActiveTab(SECTIONS[i])
+                if (activeTabRef.current !== i) {
+                  setActiveTab(i)
+                }
                 break
               }
             }
@@ -46,8 +51,7 @@ export default function Home() {
     position: 'fixed',
     width: '100%',
     zIndex: 1000,
-    bottom: isScrolled ? 'auto' : '0', 
-    top: isScrolled ? '0' : 'auto',
+    top: '0',
     transition: 'bottom 0.3s ease-in-out, top 0.3s ease-in-out',
     background: isScrolled ? 'rgba(255, 255, 255, 0.9)' : 'transparent',
     backdropFilter: isScrolled ? 'blur(10px)' : 'none',
@@ -73,9 +77,10 @@ export default function Home() {
         </div>
 
       <div id="about"><About /></div>
-      <div id="skills"><Skills /></div>
+     <div id="experience" ><Experience  /></div>
       <div id="education"><Education /></div>
-      <div id="experience" style={{ paddingBottom: '65vh' }}><Experience  /></div>
+       <div id="skills" style={{ paddingBottom: '65vh' }}><Skills /></div>
+      
     
     </div>
   );

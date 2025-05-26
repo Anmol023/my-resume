@@ -5,7 +5,7 @@ export default function Experience() {
     <Box sx={{ py: 10 }}>
       <Container>
         <Typography variant="h4" gutterBottom>Experience</Typography>
-        <Typography>Software Developer at ABC Corp (2022–Present)</Typography>
+        <Typography>Software Developer at Axis Bank (2021–Present)</Typography>
       </Container>
     </Box>
   );
