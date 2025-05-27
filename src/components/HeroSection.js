@@ -6,8 +6,7 @@ export default function HeroSection() {
     <Box
       id="hero"
       sx={{
-				
-        height: "100vh",
+        minHeight: '100dvh',
         backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('/hero-bg.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",

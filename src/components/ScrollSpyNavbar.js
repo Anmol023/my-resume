@@ -13,7 +13,7 @@ return (
         top: isSticky ? 0 : 'auto',
         left: 0,
         right: 0,
-        background: isSticky ? '#111' : 'transparent',
+        background: isSticky ?  '#111' : 'transparent',
         py: 1,
         px: 1,
         width: '100%',
@@ -21,9 +21,9 @@ return (
         boxShadow: isSticky ? '0 2px 6px rgba(0,0,0,0.3)' : 'none',
         overflowX: 'auto',
         whiteSpace: 'nowrap',
-        scrollbarWidth: 'none', // Firefox
+        scrollbarWidth: 'none',
         '&::-webkit-scrollbar': {
-          display: 'none', // Chrome/Safari
+          display: 'none',
         },
       }}
     >
