@@ -1,7 +1,7 @@
 import { Box, Typography, Container, Chip } from '@mui/material';
 
 export default function Skills() {
-  const skills = ['Kotlin','Spring Boot','Kafka','JavaScript', 'React', 'Next.js', 'Express', 'AWS'];
+  const skills = ['Kotlin','Spring Boot','Kafka','JavaScript', 'React', 'Next.js', 'Express', 'Java', 'AWS'];
 
   return (
     <Box sx={{ py: 10 }}>

@@ -100,7 +100,7 @@ export default function Home() {
       <div id="about"><About /></div>
       <div id="experience" ><Experience  /></div>
       <div id="education"><Education /></div>
-      <div id="skills" style={{ paddingBottom: '65vh' }}><Skills /></div>
+      <div id="skills" className="skills"><Skills /></div>
       <Fab
         color="primary"
         size='small'
