@@ -1,5 +1,5 @@
 import { Box, Typography, IconButton, Stack } from "@mui/material";
-import { GitHub, LinkedIn, Twitter, Instagram } from "@mui/icons-material";
+import { GitHub, LinkedIn, Instagram, X } from "@mui/icons-material";
 
 export default function HeroSection() {
   return (
@@ -38,8 +38,8 @@ export default function HeroSection() {
         <Stack direction="row" spacing={2} justifyContent="center" mt={2}>
           <IconButton href="https://linkedin.com/in/anmolgupta023" target="_blank" color="inherit"><LinkedIn /></IconButton>
           <IconButton href="https://github.com/Anmol023" target="_blank" color="inherit"><GitHub /></IconButton>
-          <IconButton href="https://twitter.com" target="_blank" color="inherit"><Twitter /></IconButton>
-          <IconButton href="https://instagram.com" target="_blank" color="inherit"><Instagram /></IconButton>
+          <IconButton href="https://x.com/atleastanm0l" target="_blank" color="inherit"><X/></IconButton>
+          <IconButton href="https://www.instagram.com/atleastanm0l/" target="_blank" color="inherit"><Instagram /></IconButton>
         </Stack>
 				<Box>
         <div className="mouse-icon">

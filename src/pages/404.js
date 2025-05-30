@@ -13,11 +13,11 @@ export default function Custom404() {
       </Typography>
 
       <Typography variant="h6" color="text.secondary" paragraph>
-        Looks like you're wandering around...
+        Looks like you're wandering around...  
+        So why not, enjoy this fun little game!
         <br />
-        I haven't created that page yet.
+          While I work on this page.
         <br />
-        Meanwhile, enjoy this fun little game!
       </Typography>
 
       <Box sx={{ my: 4 }}>
