@@ -10,7 +10,7 @@ export default function Experience() {
 
         {/* Title line */}
         <Typography sx={{ fontWeight: 'bold', mb: 2, textDecoration: 'underline' }}>
-          Axis Bank <span style={{ margin: '0 8px' }}>|</span> Full Stack Developer <span style={{ margin: '0 8px' }}>|</span> Aug 2021 - Present
+          Axis Bank <span style={{ margin: '0 8px' }}>|</span> SDE <span style={{ margin: '0 8px' }}>|</span> Aug 2021 - Present
         </Typography>
 
         {/* Insurance Platform Section */}
