@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>Anmol Gupta</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></meta>
       </Head>
       <Component {...pageProps} />
       <Analytics/>
