@@ -1,25 +1,12 @@
 import { Box, Typography, IconButton, Stack } from "@mui/material";
 import { GitHub, LinkedIn, Instagram, X } from "@mui/icons-material";
-import { useEffect } from "react";
 
 export default function HeroSection() {
-  useEffect(() => {
-  const setRealHeight = () => {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  };
-
-  setRealHeight();
-  window.addEventListener('resize', setRealHeight);
-
-  return () => window.removeEventListener('resize', setRealHeight);
-}, []);
-
   return (
     <Box
       id="hero"
       sx={{
-        height: 'calc(var(--vh, 1vh) * 100)',
+        height: '100dvh',
         backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('/hero-bg.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
