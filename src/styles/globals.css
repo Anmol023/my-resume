@@ -1,8 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-	min-height: 100vh;
+	overflow-x: hidden;
 }
 .mouse-icon {
     border: 2px solid #fff;

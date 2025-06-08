@@ -36,7 +36,7 @@ return (
       >
         {SECTIONS.map((tab, index) => (
         <Button
-          key={index}
+          id={`header-${tab.toLowerCase()}`}
           onClick={() => onTabClick(index)}
           sx={{
             color: activeTab === index ? 'primary.main' : 'white',
