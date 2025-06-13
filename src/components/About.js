@@ -11,7 +11,7 @@ export default function About() {
     years--
     months += 12
   }
-  return `${years}${months ? `.${months}` : ''} years`;
+  return `${years} yr${months ? ` ${months} month` : ''}`;
 }
   return (
     <Box sx={{ py: 10, bgcolor: '#f5f5f5' }}>
