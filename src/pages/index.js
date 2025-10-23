@@ -107,8 +107,12 @@ useEffect(() => {
               const el = document.getElementById(SECTIONS[index].toLowerCase())
               const el1 = document.getElementById(`header-${SECTIONS[index].toLowerCase()}`)
               if (el) {
-                el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                el1.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+                const yOffset = -60; // height of navbar + some margin
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+
+                // Scroll the button into view in navbar
+                if (el1) el1.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
               }
             }}
           />

@@ -32,6 +32,8 @@ return (
           display: 'inline-flex',
           gap: 1,
           whiteSpace: 'nowrap',
+          pl: 2,
+          pr: 1.5
         }}
       >
         {SECTIONS.map((tab, index) => (
@@ -41,8 +43,7 @@ return (
           sx={{
             color: activeTab === index ? 'primary.main' : 'white',
             fontWeight: activeTab === index ? 'bold' : 'normal',
-            flexShrink: 1,
-            mx: 1, 
+            flexShrink: 0,
             px: 1,
             fontSize: { xs: '0.75rem', sm: '0.875rem' },
             minWidth: 'fit-content',
