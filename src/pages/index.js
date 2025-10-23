@@ -9,6 +9,7 @@ import { SECTIONS } from '@/constant';
 import { CircularProgress, Fab } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 import Bottom from '@/components/Bottom';
+import Certification from '@/components/Certification';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(-1)
@@ -116,8 +117,9 @@ useEffect(() => {
       <div id="about"><About /></div>
       <div id="experience" ><Experience  /></div>
       <div id="education"><Education /></div>
-      <div id="skills" className="skills"><Skills /></div>
-      {/* <div id='bottom'><Bottom/></div> */}
+      <div id="certification"><Certification/></div>
+      <div id="skills"><Skills/></div>
+      <Bottom/>
       <Fab
         color="primary"
         size='small'

@@ -66,25 +66,7 @@ html, body {
     padding: 30px 0px;
 }
 #skills {
-  padding-bottom: 63vh; /* Default */
-}
-
-@media (max-width: 1024px) {
-  #skills {
-    padding-bottom: 69vh; /* Tablets and large phones */
-  }
-}
-
-@media (max-width: 396px) {
-  #skills {
-    padding-bottom: 63vh; /* Phones */
-  }
-}
-
-@media (max-width: 380px) {
-  #skills {
-    padding-bottom: 56vh; /* Phones */
-  }
+  scroll-margin-top: 80px; /* height of navbar */
 }
 /* /Mouse Icon
   * =================================================================== */
