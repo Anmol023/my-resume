@@ -9,7 +9,7 @@
     "doodhwala-tfl1": {
       "routing": [
         {
-          "paths": ["/doodhwala/:path*"]
+          "paths": ["/doodhwala", "/doodhwala/:path*"]
         }
       ]
     }
