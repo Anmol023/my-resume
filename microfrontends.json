@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "my-resume": {
+      "development": {
+        "fallback": "www.anmolgupta023.com"
+      }
+    },
+    "doodhwala-tfl1": {
+      "routing": [
+        {
+          "paths": ["/doodhwala/:path*"]
+        }
+      ]
+    }
+  }
+}
